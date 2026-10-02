@@ -1,0 +1,64 @@
+*args -> tuple
+**kwargs -> dictionary
+
+# Function
+def add(a, b):
+    return a + b
+
+
+# Default argument
+def greet(name="User"):
+    return f"Hello {name}"
+
+
+# *args
+def add_all(*numbers):
+    return sum(numbers)
+
+
+# **kwargs
+def create_user(**details):
+    return details
+
+
+# List comprehension
+squares = [x * x for x in numbers]
+
+
+# List comprehension + condition
+even = [x for x in numbers if x % 2 == 0]
+
+
+# Dictionary comprehension
+squares = {x: x * x for x in numbers}
+
+
+# Lambda
+square = lambda x: x * x
+
+
+# Type hints
+def add(a: int, b: int) -> int:
+    return a + b
+
+
+# Optional
+name: str | None = None
+
+
+# Exception handling
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+
+# Import
+from math import sqrt
+
+
+# JSON
+import json
+
+json_string = json.dumps(data)
+python_data = json.loads(json_string)
